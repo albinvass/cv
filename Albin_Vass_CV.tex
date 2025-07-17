@@ -1,0 +1,204 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{xcolor}
+
+% Page setup
+\geometry{
+    left=2cm,
+    right=2cm,
+    top=2cm,
+    bottom=2cm
+}
+
+% Color scheme
+\definecolor{darkblue}{RGB}{0,51,102}
+\definecolor{lightgray}{RGB}{245,245,245}
+
+% Section formatting
+\titleformat{\section}{\Large\bfseries\color{darkblue}}{}{0em}{}[\titlerule]
+\titleformat{\subsection}{\large\bfseries\color{darkblue}}{}{0em}{}
+\titleformat{\subsubsection}{\normalsize\bfseries}{}{0em}{}
+
+% Hyperlink setup
+\hypersetup{
+    colorlinks=true,
+    linkcolor=darkblue,
+    urlcolor=darkblue,
+    citecolor=darkblue
+}
+
+% Remove page numbers
+\pagestyle{empty}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\huge\bfseries\color{darkblue} Albin Vass} \\
+    \vspace{0.5em}
+    {\Large DevOps \& Cloud Engineer} \\
+    \vspace{1em}
+    \begin{tabular}{c c c}
+        \textbf{Location:} Hisings Backa, Sweden & 
+        \textbf{Phone:} +46 761 857 907 & 
+        \textbf{Email:} contact@mail.albinvass.com \\
+        \multicolumn{3}{c}{\textbf{LinkedIn:} \href{http://www.linkedin.com/in/albin-vass}{www.linkedin.com/in/albin-vass} | \textbf{GitHub:} \href{https://github.com/albinvass}{https://github.com/albinvass}}
+    \end{tabular}
+\end{center}
+
+\vspace{1em}
+
+\section{Professional Summary}
+DevOps and Cloud Engineer with a strong background in designing, implementing, and optimizing CI/CD pipelines and cloud infrastructure for large-scale, high-availability environments. Experienced in accelerating deployment cycles, leading cross-functional teams, and driving automation initiatives. Passionate about build systems, containerization, and delivering business value through technology. Skilled at supporting and communicating with diverse developer teams to ensure smooth platform operations.
+
+\section{Core Competencies}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Build Systems:} Bazel, Nix
+    \item \textbf{Containerization \& Orchestration:} Docker, Kubernetes, MicroVMs
+    \item \textbf{CI/CD Pipeline Design \& Automation}
+    \item \textbf{Cloud Platforms:} AWS, Azure
+    \item \textbf{Infrastructure as Code:} Terraform, Ansible, Nix
+    \item \textbf{Monitoring \& Metrics:} Prometheus, Elasticsearch, DORA metrics
+    \item \textbf{Secrets Management \& Security}
+    \item \textbf{Scripting \& Programming:} Python, Go
+    \item \textbf{Collaboration \& Technical Support}
+\end{itemize}
+
+\section{Professional Experience}
+
+\subsection{DevOps and Cloud Engineer -- Volvo Cars}
+\textit{Mar 2024 -- Present}
+\begin{itemize}[leftmargin=*]
+    \item Upgraded the build system to Bazel, improving build speed and reliability.
+    \item Developed a microVM-based solution to accelerate CI/CD jobs, inspired by AWS research and BazelCon insights.
+    \item Facilitated collaboration between Bazel and Zuul teams, ensuring project alignment.
+    \item Provided communication and support to a large developer base, managing the CI/CD platform.
+    \item Reused Bazel's analysis cache by cloning micro-VMs, significantly reducing build times.
+    \item \textbf{Tools:} Python, Go, Kubernetes, AWS, Zuul-CI, Gerrit, Artifactory, Ansible, Linux, Nix, Bazel, CMake, Firecracker, Qemu
+\end{itemize}
+
+\subsection{Cloud and DevOps Engineer -- Srenity}
+\textit{Oct 2023 -- Mar 2024}
+\begin{itemize}[leftmargin=*]
+    \item Designed and implemented a robust backup \& restore solution for multiple database types.
+    \item Enhanced the DevOps environment for the R\&D team, improving deployment reliability.
+    \item \textbf{Tools:} Kubernetes, AWS, Terraform, GitLab CI, Ansible, Nix, Linux
+\end{itemize}
+
+\subsection{DevOps Engineer -- C-Infinity}
+\textit{Aug 2023 -- Mar 2024}
+\begin{itemize}[leftmargin=*]
+    \item Led design and deployment of cloud infrastructure for an AI product.
+    \item Managed IT infrastructure for identity management, security, and productivity tools.
+    \item \textbf{Tools:} Azure, Terraform, GitHub Actions, Ansible, Linux, Python, CMake, Microsoft 365
+\end{itemize}
+
+\subsection{Cloud and DevOps Engineer -- Telia}
+\textit{Oct 2022 -- Oct 2023}
+\begin{itemize}[leftmargin=*]
+    \item Maintained Kubernetes platforms and CI/CD pipelines for Telia's web services.
+    \item Architected a secrets management solution and initiated centralized DORA metrics collection.
+    \item \textbf{Tools:} Kubernetes, AWX, Vault, AWS, Terraform, Jenkins, GitHub Actions, Devlake, Elasticsearch, Prometheus, Ansible, Linux
+\end{itemize}
+
+\subsection{DevOps Engineer -- Zenseact}
+\textit{Aug 2021 -- Oct 2022}
+\begin{itemize}[leftmargin=*]
+    \item Led a team to develop a high-performance CI/CD solution for Bazel workloads.
+    \item Reduced resource usage by 90\% through remote execution and process optimization.
+    \item Educated and mentored a new team to ensure sustainable operations.
+    \item \textbf{Tools:} Python, Openshift, Zuul-CI, Git, Gerrit, Artifactory, Ansible, Linux, Bazel, Buildbarn, Prometheus
+\end{itemize}
+
+\subsection{DevOps and Cloud Engineer -- Volvo Cars}
+\textit{Oct 2018 -- Aug 2021}
+\begin{itemize}[leftmargin=*]
+    \item Provided technical leadership for a CI/CD system scaling from 1 to 400+ projects.
+    \item The solution won the Volvo Cars Technology and Innovation Award 2021.
+    \item \textbf{Tools:} Python, Terraform, Kubernetes, AWS, Zuul-CI, Git, Gerrit, Artifactory, Ansible, Linux, Bazel, CMake, Windows
+\end{itemize}
+
+\section{Key Projects}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Autonomous Toy Car (2017):} Led development of a self-driving toy car using Raspberry Pi, Arduino, CAN bus, and RTK-GNSS.
+    \item \textbf{Open Source Contributions:} Maintainer of Zuul-Jobs (official Zuul-CI library); active on OpenDev and GitHub.
+\end{itemize}
+
+\section{Awards \& Publications}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Volvo Cars Technology and Innovation Award} (2021)
+    \item \textbf{Hackers Vote \& Tech Prize} -- Gothenburg Startuphack (``Fake news buster'', 2019)
+    \item \textbf{Best Thesis Project} -- HMS Industrial Networks (2018)
+    \item \textbf{Publication:} IEEE Xplore -- ``An iterative approach to determine the refractive index of 3D printed 60GHz PLA lenses'' (2018)
+\end{itemize}
+
+\section{Education}
+\textbf{B.Sc. Electronics Engineering} \\
+Halmstad University, 2015--2018 \\
+\textit{Thesis:} ``Verification of 3D-printed quasi-optical lenses for 60GHz radar applications''
+
+\section{Technical Skills}
+\begin{tabularx}{\textwidth}{|l|X|}
+\hline
+\textbf{Programming/Scripting} & Python, Go \\
+\hline
+\textbf{Cloud Platforms} & AWS, Azure \\
+\hline
+\textbf{IaC \& Automation} & Terraform, Ansible, Nix \\
+\hline
+\textbf{CI/CD} & Zuul-CI, Jenkins, GitLab CI, GitHub Actions \\
+\hline
+\textbf{Containers/Orchestration} & Kubernetes, Docker, MicroVMs, Firecracker, Qemu \\
+\hline
+\textbf{Monitoring/Logging} & Prometheus, Elasticsearch, Devlake \\
+\hline
+\textbf{VCS \& Collaboration} & Git, Gerrit, Artifactory \\
+\hline
+\textbf{OS} & Linux, Windows \\
+\hline
+\textbf{Other} & CMake, Microsoft 365, Secrets Management, OverlayFS, VirtioFS, Devmapper \\
+\hline
+\end{tabularx}
+
+\section{Soft Skills}
+\begin{itemize}[leftmargin=*]
+    \item Strong communicator, experienced in supporting and collaborating with large developer teams.
+    \item Skilled at managing platform support and facilitating cross-team alignment.
+    \item Leadership in mentoring and onboarding new team members.
+\end{itemize}
+
+\section{Languages}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{Swedish:} Native
+    \item \textbf{English:} Fluent
+\end{itemize}
+
+\section{Portfolio \& Links}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{GitHub:} \href{https://github.com/albinvass}{https://github.com/albinvass}
+    \item \textbf{OpenDev:} \href{https://review.opendev.org}{https://review.opendev.org} (owner:``albin\_vass'' OR reviewedby:``albin\_vass'')
+    \item \textbf{Immich:} \href{https://immich.albinvass.se/}{https://immich.albinvass.se/}
+    \item \textbf{Matrix:} \href{https://matrix.albinvass.se/}{https://matrix.albinvass.se/}
+    \item \textbf{Home Assistant:} \href{https://homeassistant.albinvass.se}{https://homeassistant.albinvass.se}
+\end{itemize}
+
+\section{Additional Information}
+\begin{itemize}[leftmargin=*]
+    \item \textbf{References:} Available upon request.
+    \item \textbf{Preferred Technologies:} Bazel, Nix, Docker, Kubernetes.
+    \item \textbf{Role Focus:} Seeking DevOps roles centered on automation and development, with a preference for build systems and containerization over traditional operations.
+\end{itemize}
+
+\section{Interests}
+Computers \& programming, electronics, gaming, fantasy, outdoors.
+
+\end{document}
